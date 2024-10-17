@@ -1,0 +1,9 @@
+<app-header></app-header>
+
+<div class="content">
+    <app-form (formSubmitted)="onFormSubmit($event)"></app-form>
+    
+    <app-results [formData]="submittedData"></app-results>
+</div>
+
+<app-footer></app-footer>

@@ -1,0 +1,21 @@
+<div *ngIf="formData">
+    <h3>Results</h3>
+    <p>The form was submitted with the following data:</p>
+    <ul>
+        <li>First Name: {{ formData.firstName }}</li>
+        <li>Last Name: {{ formData.lastName }}</li>
+        <li>Address: {{ formData.address }}</li>
+        <li>Postal Code: {{ formData.postalCode }}</li>
+        <li>City: {{ formData.city }}</li>
+        <li>Country: {{ formData.country }}</li>
+        <li>Telephone: {{ formData.telephone }}</li>
+        <li>Email: {{ formData.email }}</li>
+        <li>Gender: {{ formData.gender }}</li>
+        <li>Password: {{ formData.password }}</li>
+        <li>Login: {{ formData.login }}</li>
+    </ul>
+</div>
+
+<div *ngIf="!formData">
+    <p>No data submitted yet.</p>
+</div>
